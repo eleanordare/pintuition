@@ -27,3 +27,11 @@ Python script to pull pins from a specific [Pinterest board](https://www.pintere
 - [Bottle Python Web Framework](http://bottlepy.org/)
 - [Highcharts JS Charts](http://www.highcharts.com/)
 - [Python Highcharts Wrapper](https://github.com/kyper-data/python-highcharts)
+
+
+## Todo
+
+- Clean-up, refactoring, and more documentation
+- Dynamic injection of board URL
+- Additional graph representations (heatmap, etc.)
+- Prettier interface
