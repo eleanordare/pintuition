@@ -1,4 +1,6 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
+__author__ = 'Eleanor Mehlenbacher'
 
 import datetime
 from highcharts import Highchart
