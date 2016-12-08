@@ -7,8 +7,6 @@ import BaseHTTPServer, SimpleHTTPServer
 import ssl
 from data_to_highcharts import HighchartsMethods
 
-access_token="AWRuspwOpmEWxbbkTD2gGNDnmt79FIzt04E4NzVDmoq4pAAu4AAAAAA"
-
 # content on page
 @route('/hello')
 def addPage():
