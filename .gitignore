@@ -7,3 +7,5 @@ server.key.org
 server.pem
 .gitignore
 jenkins.py
+Chart.html
+*.pyc
