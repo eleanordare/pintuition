@@ -1,41 +1,36 @@
 #!/usr/bin/env python
 __author__ = 'Eleanor Mehlenbacher'
 
-from bottle import Bottle, get, post, request, put, delete, run, route, ServerAdapter
+from bottle import Bottle, get, post, request, put, delete, run, route, ServerAdapter, static_file, template
 import json
 import BaseHTTPServer, SimpleHTTPServer
 import ssl
+from data_to_highcharts import HighchartsMethods
 
 access_token="AWRuspwOpmEWxbbkTD2gGNDnmt79FIzt04E4NzVDmoq4pAAu4AAAAAA"
 
 # content on page
 @route('/hello')
 def addPage():
-    return "Hi there."
-
-# adding a new server
-@post('/hello')
-def add():
-    # retrieves server information from body of request
-    content = json.load(request.body)
-    server = content[0]
+    highchartsMethods = HighchartsMethods()
+    highchartsMethods.main()
+    return template('Chart.html')
 
 
-# changing an existing server
-@put('/hello')
-def update():
-    # retrieves server information from body of request
-    content = json.load(request.body)
-    server1 = content[0]
-    server2 = content[1]
-
-
-# delete an existing server
-@delete('/hello')
-def delete():
-    # retrieves server information from body of request
-    content = json.load(request.body)
-    server = content[0]
+# # adding a new server
+# @post('/hello')
+# def add():
+#
+#
+# # changing an existing server
+# @put('/hello')
+# def update():
+#
+#
+# # delete an existing server
+# @delete('/hello')
+# def delete():
+#
 
 
 
