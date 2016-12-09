@@ -2,6 +2,8 @@
 
 Python script to pull pins from a specific [Pinterest board](https://www.pinterest.com/eleanordare/wedding/) and generate a graph based on the frequency of posting.
 
+[See a demo here.](http://pintuition-152014.appspot.com/)
+
 
 ## Getting Started
 
